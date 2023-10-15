@@ -24,7 +24,6 @@ const LoginPage = () => {
 
   const BaseUrl = import.meta.env.VITE_API_URL;
   const [status, setStatus] = useState(false);
-  // const navigate = useNavigate();
   const { saveAuth, setCurrentUser } = useAuth();
 
   const formik = useFormik({
@@ -56,8 +55,6 @@ const LoginPage = () => {
                 setCurrentUser(user);
                 formik.resetForm();
                 toast.success("Login successful");
-                // // localStorage.setItem("token", response.data.token);
-                // navigate("/home");
               } else if (response.status === 400) {
                 toast.error(response.data.message);
               }
