@@ -194,7 +194,7 @@ const Register = () => {
                 <TextField
                   label="Confirm Password"
                   variant="outlined"
-                  type="confirmpassword"
+                  type="password"
                   fullWidth
                   name="confirmpassword"
                   value={formik.values.confirmpassword}
@@ -214,7 +214,7 @@ const Register = () => {
             <Box paddingBottom={3} paddingRight={2}>
               <Button
                 variant="contained"
-                color="secondary"
+                color="primary"
                 size="large"
                 type="submit"
               >
@@ -222,7 +222,7 @@ const Register = () => {
               </Button>
             </Box>
           </form>
-          ß
+
           <Box alignSelf={"center"} paddingTop={6}>
             <CardActions>
               <Typography variant="body2" color="text.secondary">
