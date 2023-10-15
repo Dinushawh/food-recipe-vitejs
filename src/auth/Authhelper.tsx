@@ -1,6 +1,6 @@
 import { authModel } from "./_models";
 
-const AUTH_LOCAL_STORAGE_KEY = "kt-auth-react-v2";
+const AUTH_LOCAL_STORAGE_KEY = "food-recepie-token";
 
 const getAuth = (): authModel | undefined => {
   if (!localStorage) {
