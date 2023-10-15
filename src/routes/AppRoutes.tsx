@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
-import { PrivateRoutes } from "./privateRoutes";
+import { PrivateRoutes } from "./PrivateRoutes";
 import { PublicRoutes } from "./PublicRoutes";
 import { App } from "./App";
 import { useAuth } from "../auth/Auth";
